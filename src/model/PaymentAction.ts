@@ -1,0 +1,4 @@
+export enum PaymentAction {
+  AUTHORIZE = 'AUTHORIZE',
+  AUTHORIZEANDCAPTURE = 'AUTHORIZEANDCAPTURE',
+}
