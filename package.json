@@ -1,5 +1,5 @@
 {
-  "name": "amazonpay-alexa-utils",
+  "name": "amazonpay-alexa-utils-nodejs",
   "version": "1.2.1",
   "description": "Convenience utilities to simplify Amazon Pay for Alexa Skills functionality",
   "main": "lib/AmazonPay.js",
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielneu/amazonpay-alexa-utils.git"
+    "url": "git+https://github.com/alexa/amazonpay-alexa-utils-nodejs.git"
   },
   "bugs": {
-    "url": "https://github.com/danielneu/amazonpay-alexa-utils/issues"
+    "url": "https://github.com/alexa/amazonpay-alexa-utils-nodejs/issues"
   },
   "files": [
     "lib/**/*"
