@@ -1,3 +1,8 @@
+/* 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+*/
+
 import * as AmazonPay from '../AmazonPay';
 import { Currency } from '../model/Currency';
 import { SandboxSetting } from '../model/SandboxSetting';

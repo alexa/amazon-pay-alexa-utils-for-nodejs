@@ -1,3 +1,8 @@
+/* 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+*/
+
 import { ChargePayloadBuilder } from '../../../checkout/charge/ChargePayloadBuilder';
 import { Currency } from '../../../model/Currency';
 import { PaymentAction } from '../../../model/PaymentAction';

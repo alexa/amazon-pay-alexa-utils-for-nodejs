@@ -1,3 +1,8 @@
+/* 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+*/
+
 import { interfaces } from 'ask-sdk-model';
 import SellerOrderAttributes = interfaces.amazonpay.model.v1.SellerOrderAttributes;
 

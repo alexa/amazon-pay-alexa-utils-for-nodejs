@@ -1,4 +1,9 @@
-import * as Alexa from 'ask-sdk';
+/* 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+*/
+
+import * as Alexa from 'ask-sdk-core';
 import { RequestEnvelope } from 'ask-sdk-model';
 import * as https from 'https';
 import { Environment } from '../model/Environment';

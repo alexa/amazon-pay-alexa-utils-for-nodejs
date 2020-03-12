@@ -1,3 +1,8 @@
+/* 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+*/
+
 import { SetupPayloadBuilder } from '../../../checkout/setup/SetupPayloadBuilder';
 import { Currency } from '../../../model/Currency';
 import { SetupDirectiveBuilder } from '../../../checkout/setup/SetupDirectiveBuilder';

@@ -1,3 +1,8 @@
+/* 
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+*/
+
 import { BillingAgreementAttributesBuilder } from '../../../checkout/setup/BillingAgreementAttributesBuilder';
 import { BillingAgreementType } from '../../../model/BillingAgreementType';
 import { Currency } from '../../../model/Currency';
