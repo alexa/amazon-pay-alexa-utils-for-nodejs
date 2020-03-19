@@ -1,6 +1,6 @@
 {
-  "name": "amazon-pay-alexa-utils",
-  "version": "1.3.0",
+  "name": "@amazonpay/amazon-pay-alexa-utils",
+  "version": "1.3.1",
   "description": "Convenience utilities to simplify Amazon Pay for Alexa Skills functionality",
   "main": "lib/AmazonPay.js",
   "types": "lib/AmazonPay.d.ts",
