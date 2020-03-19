@@ -20,7 +20,7 @@ Build payloads for setup operations the easy way -  no need to know the payload 
 Learn more about the [Amazon Pay Setup API](https://developer.amazon.com/de/docs/amazon-pay/amazon-pay-apis-for-alexa.html#setup)
 
 ```javascript
-const AmazonPay = require('amazonpay-alexa-utils');
+const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
 const payload = AmazonPay.setupPayload(/*version*/ '2')
     .withSellerId('ABCD1234ADS')
@@ -83,7 +83,7 @@ Build payloads for charge operations the easy way -  no need to know the payload
 Learn more about the [Amazon Pay Charge API](https://developer.amazon.com/de/docs/amazon-pay/amazon-pay-apis-for-alexa.html#charge)
 
 ```javascript
-const AmazonPay = require('amazonpay-alexa-utils');
+const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
 const payload = AmazonPay.chargePayload(/* version */ '2')
     .withSellerId('ABCD1234ADS')
@@ -141,7 +141,7 @@ Directives allow you to execute Amazon Pay operations. Just pass in the right pa
 ### Setup
 
 ```javascript
-const AmazonPay = require('amazonpay-alexa-utils');
+const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
 const payloadBuilder = AmazonPay.setupPayload(/* version */ '2')
     .withSellerId('ABCD1234ADS')
@@ -174,7 +174,7 @@ console.log(JSON.stringify(directive));
 ### Charge
 
 ```javascript
-const AmazonPay = require('amazonpay-alexa-utils');
+const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
 const payloadBuilder = AmazonPay.chargePayload(/* version */ '2')
     .withSellerId('ABCD1234ADS')
@@ -223,7 +223,7 @@ const directive = AmazonPay
 Knowing if a custoemr has accepted Amazon Pay permissions is essential. The following method makes this job as easy as possible for you.
 
 ```javascript
-const AmazonPay = require('amazonpay-alexa-utils');
+const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
 const permissionIsGranted = AmazonPay.isAmazonPayPermissionGranted(handlerInput.requestEnvelope);
 
@@ -232,7 +232,7 @@ const permissionIsGranted = AmazonPay.isAmazonPayPermissionGranted(handlerInput.
 
 ### Ask For Permissions - send card andprompt
 ```javascript
-const AmazonPay = require('amazonpay-alexa-utils');
+const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
 const response = AmazonPay.askForPermissionCard('Spoken message to ask for permission enablement')
   .withAdditionalPermissions(['alexa::profile:email:read', 'alexa::profile:name:read'])
@@ -248,7 +248,7 @@ Please check for granted Amazon Pay permissions first.
 
 Learn more about the [Amazon Pay Buyer Address API](https://developer.amazon.com/de/docs/amazon-pay/amazon-pay-apis-for-alexa.html#buyer_address).
 ```javascript
-  const AmazonPay = require('amazonpay-alexa-utils');
+  const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
   async handle: {
   ...
@@ -276,7 +276,7 @@ Please check for granted Amazon Pay permission first.
 
 Learn more about the [Amazon Pay Buyer Id API](https://developer.amazon.com/de/docs/amazon-pay/amazon-pay-apis-for-alexa.html#buyer_id).
 ```javascript
-  const AmazonPay = require('amazonpay-alexa-utils');
+  const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
   async handle: {
   ...
