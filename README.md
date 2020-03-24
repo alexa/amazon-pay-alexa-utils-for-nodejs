@@ -10,7 +10,7 @@
 The Amazon Pay Alexa Utils package simplifies creating Amazon Pay related payloads and Directives for skills created with the ASK SDK v2 for Node.js.
 It also offers the Amazon Pay specific APIs to retrieve Buyer Ids and Shipping Addresses and supports with a simple way to handle permissions.
 
-To install it into your project, simply execute `npm i amazon-pay-alexa-utils --save`
+To install it into your project, simply execute `npm i @amazonpay/amazon-pay-alexa-utils --save`
 
 ## Setup API
 
