@@ -220,7 +220,7 @@ const directive = AmazonPay
 
 ### Get Permission Status
 
-Knowing if a custoemr has accepted Amazon Pay permissions is essential. The following method makes this job as easy as possible for you.
+Knowing if a customer has accepted Amazon Pay permissions is essential. The following method makes this job as easy as possible for you.
 
 ```javascript
 const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
@@ -230,7 +230,7 @@ const permissionIsGranted = AmazonPay.isAmazonPayPermissionGranted(handlerInput.
 ```
 
 
-### Ask For Permissions - send card andprompt
+### Ask For Permissions - send card and prompt
 ```javascript
 const AmazonPay = require('@amazonpay/amazon-pay-alexa-utils');
 
@@ -241,7 +241,7 @@ const response = AmazonPay.askForPermissionCard('Spoken message to ask for permi
 
 ## Amazon Pay Buyer Address API
 
-Amazon Pay helps you fullfilling your oders seamlessly, by - among others - offering delivery address data via the Amazon Pay payment objects. Sometimes, this is too late in the flow to personalize the experience.
+Amazon Pay helps you fulfilling your orders seamlessly, by - among others - offering delivery address data via the Amazon Pay payment objects. Sometimes, this is too late in the flow to personalize the experience.
 The Amazon Pay Buyer Address API was introduced to help you out. Retrieve the default shipping address of the current buyer via a simple GET request whenever you need it.
 
 Please check for granted Amazon Pay permissions first.
@@ -261,7 +261,7 @@ Learn more about the [Amazon Pay Buyer Address API](https://developer.amazon.com
   ...
   
   // if you want to test in sandbox mode
-  const buyerAddress = await AmazonPay.getBuyerAddressForRegion(requestEnvelope, sellerId, 'sandbox', 'mysandbox@email.test');
+  const buyerAddress = await AmazonPay.getBuyerAddress(requestEnvelope, sellerId, 'sandbox', 'mysandbox@email.test');
   
   }
 ```
