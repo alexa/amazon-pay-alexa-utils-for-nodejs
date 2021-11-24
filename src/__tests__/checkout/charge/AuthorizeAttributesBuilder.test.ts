@@ -28,7 +28,7 @@ test('all attributes', () => {
     .withCurrency(Currency.EUR)
     .withSellerAuthorizationNote('auth note')
     .withSoftDescriptor('soft')
-    .withTransactionTimeout('0')
+    .withTransactionTimeout(0)
     .build();
   expect(attributes.authorizationReferenceId).toBe('ref');
   expect(attributes.authorizationAmount.amount).toBe('50');
@@ -36,5 +36,5 @@ test('all attributes', () => {
 
   expect(attributes.sellerAuthorizationNote).toBe('auth note');
   expect(attributes.softDescriptor).toBe('soft');
-  expect(attributes.transactionTimeout).toBe('0');
+  expect(attributes.transactionTimeout).toBe(0);
 });

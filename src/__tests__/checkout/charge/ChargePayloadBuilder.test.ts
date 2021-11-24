@@ -15,7 +15,7 @@ test('charge payload full', () => {
     .withAuthorizationReferenceId('ref')
     .withAmount('50')
     .withCurrency(Currency.EUR)
-    .withTransactionTimeout('0')
+    .withTransactionTimeout(0)
     .withSellerAuthorizationNote('my auth note')
     .withSoftDescriptor('my store - Alexa skill')
     .withSellerOrderId('12345')
@@ -30,7 +30,7 @@ test('charge payload full', () => {
   expect(payload.authorizeAttributes.authorizationReferenceId).toBe('ref');
   expect(payload.authorizeAttributes.authorizationAmount.amount).toBe('50');
   expect(payload.authorizeAttributes.authorizationAmount.currencyCode).toBe(Currency.EUR);
-  expect(payload.authorizeAttributes.transactionTimeout).toBe('0');
+  expect(payload.authorizeAttributes.transactionTimeout).toBe(0);
   expect(payload.authorizeAttributes.sellerAuthorizationNote).toBe('my auth note');
   expect(payload.authorizeAttributes.softDescriptor).toBe('my store - Alexa skill');
   expect(payload.sellerOrderAttributes).toBeDefined();
@@ -58,7 +58,7 @@ test('charge payload full', () => {
       },
       sellerAuthorizationNote: 'my auth note',
       softDescriptor: 'my store - Alexa skill',
-      transactionTimeout: '0',
+      transactionTimeout: 0,
     },
     sellerOrderAttributes: {
       '@type': 'SellerOrderAttributes',

@@ -33,7 +33,7 @@ export class ChargePayloadBuilder {
   // optional arguments on AuthorizeAttributes
   private sellerAuthorizationNote: string = this.DUMMY;
   private softDescriptor: string = this.DUMMY;
-  private transactionTimeout: string = this.DUMMY;
+  private transactionTimeout: number = -1;
 
   // optional SellerOrderAttributes
   private sellerOrderId: string = this.DUMMY;
@@ -119,12 +119,12 @@ export class ChargePayloadBuilder {
     return this.withSoftDescriptor(softDescriptor);
   }
 
-  public withTransactionTimeout(transactionTimeout: string): ChargePayloadBuilder {
+  public withTransactionTimeout(transactionTimeout: number): ChargePayloadBuilder {
     this.transactionTimeout = transactionTimeout;
     return this;
   }
 
-  public setTransactionTimeout(transactionTimeout: string): ChargePayloadBuilder {
+  public setTransactionTimeout(transactionTimeout: number): ChargePayloadBuilder {
     return this.withTransactionTimeout(transactionTimeout);
   }
 

@@ -24,7 +24,7 @@ export class AuthorizeAttributesBuilder {
   // optional arguments on AuthorizeAttributes
   private sellerAuthorizationNote: string = this.DUMMY;
   private softDescriptor: string = this.DUMMY;
-  private transactionTimeout: string = this.DUMMY;
+  private transactionTimeout: number = -1;
 
   constructor(version: string) {
     // version can be used to decide for the right fromat in future
@@ -79,13 +79,13 @@ export class AuthorizeAttributesBuilder {
     return this.withSoftDescriptor(softDescriptor);
   }
 
-  public withTransactionTimeout(transactionTimeout: string): AuthorizeAttributesBuilder {
+  public withTransactionTimeout(transactionTimeout: number): AuthorizeAttributesBuilder {
     this.needsoptionalAuthAttributes = true;
     this.transactionTimeout = transactionTimeout;
     return this;
   }
 
-  public setTransactionTimeout(transactionTimeout: string): AuthorizeAttributesBuilder {
+  public setTransactionTimeout(transactionTimeout: number): AuthorizeAttributesBuilder {
     return this.withTransactionTimeout(transactionTimeout);
   }
 
@@ -119,7 +119,7 @@ export class AuthorizeAttributesBuilder {
       if (this.softDescriptor !== this.DUMMY) {
         authAttributes = Object.assign(authAttributes, { softDescriptor: this.softDescriptor });
       }
-      if (this.transactionTimeout !== this.DUMMY) {
+      if (this.transactionTimeout !== -1) {
         authAttributes = Object.assign(authAttributes, { transactionTimeout: this.transactionTimeout });
       }
     }

@@ -1,6 +1,6 @@
 {
   "name": "@amazonpay/amazon-pay-alexa-utils",
-  "version": "1.3.2",
+  "version": "1.3.4",
   "description": "Convenience utilities to simplify Amazon Pay for Alexa Skills functionality",
   "main": "lib/AmazonPay.js",
   "types": "lib/AmazonPay.d.ts",
@@ -24,16 +24,16 @@
   "license": "Apache-2.0",
   "private": false,
   "devDependencies": {
-    "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.1",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.10",
     "ask-sdk": "^2.6.0",
     "ask-sdk-model": "^1.18.0",
-    "jest": "^25.1.0",
-    "prettier": "^1.18.2",
-    "ts-jest": "^25.2.1",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
     "tslint": "^6.1.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.5.3"
+    "typescript": "^4.5.2"
   },
   "dependencies": {
     "https": "^1.0.0"

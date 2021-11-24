@@ -101,7 +101,7 @@ test('charge payload full', () => {
     .withAuthorizationReferenceId('ref')
     .withAmount('50')
     .withCurrency(Currency.EUR)
-    .withTransactionTimeout('0')
+    .withTransactionTimeout(0)
     .withSellerAuthorizationNote('my auth note')
     .withSoftDescriptor('my store - Alexa skill')
     .withSellerOrderId('12345')
@@ -128,7 +128,7 @@ test('charge payload full', () => {
       },
       sellerAuthorizationNote: 'my auth note',
       softDescriptor: 'my store - Alexa skill',
-      transactionTimeout: '0',
+      transactionTimeout: 0,
     },
     sellerOrderAttributes: {
       '@type': 'SellerOrderAttributes',
